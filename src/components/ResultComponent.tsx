@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
+interface State {
+  result: string
+}
 
-
-class ResultComponent extends Component {
-
+class ResultComponent extends Component<State> {
+  static result: State 
   render() {
-    let {result} = this.props;
       return (
         <div className="result">
-          <p>{result}</p>
+          <p>{this.props.result}</p>
         </div>
       );
   }
