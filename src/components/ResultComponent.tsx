@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-interface State {
+export interface State {
   result: string
 }
 
