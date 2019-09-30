@@ -1,22 +1,28 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family:'digital-calculator-font';
+  src: url('Segment14.otf');
+ }
+.calculator-body{
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
+.result {
+  background-color: #757575;
+  font-family:'digital-calculator-font';
+  font-size: calc(10vh);
+  min-height: 10%;
+  padding: 1px;
+  margin: 0px;
+  font-stretch: expanded;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonpad {
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-link {
-  color: #09d3ac;
+.button {
+  background-color: #d4d4d4;
+  font-family: fantasy;
+  font-size: calc(8vh);
+  padding: 0px;
+  margin: 1px;
 }

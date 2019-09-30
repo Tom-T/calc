@@ -1,18 +1,15 @@
 import React, {Component} from 'react';
 
-export interface State {
-  result: string
+interface Props {
+  state: string
 }
 
-class ResultComponent extends Component<State> {
-  static result: State 
+export default class ResultComponent extends Component<Props> {
   render() {
-      return (
-        <div className="result">
-          <p>{this.props.result}</p>
-        </div>
-      );
+    return (
+      <div className="result">
+        <p>{this.props.state}</p>
+      </div>
+    );
   }
 }
-
-export default ResultComponent;
