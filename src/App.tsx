@@ -11,9 +11,9 @@ export default class App extends Component<Props> {
     super(props)
     this.state = {
       result: "Simple Calc"
+    }
   }
-  }
-  
+
   onClick = (button: string) => {
     console.log("Data: " +button )
 
@@ -49,32 +49,30 @@ export default class App extends Component<Props> {
         // eslint-disable-next-line
         result: (eval(this.state.result) || "" ) + ""
       })
-  } catch (e) {
-    this.setState({
-      result: "error"
-    })
-  }
-};
+    } catch (e) {
+      this.setState({
+        result: "error"
+      })
+    }
+  };
 
-reset = () => {
-    this.setState({
-        result: " "
-    })
-};
+  reset = () => {
+      this.setState({
+          result: " "
+      })
+  };
 
-backspace = () => {
-    this.setState({
-        result: this.state.result.slice(0, -1)
-    })
-};
+  backspace = () => {
+      this.setState({
+          result: this.state.result.slice(0, -1)
+      })
+  };
 
   render() {
     return (
-      <div>
-          <div className="calculator-body">
-              <ResultComponent state={this.state.result}/>
-              <BasicKeyPadComponent onClick={this.onClick}/>
-          </div>
+      <div className="calculator-body">
+        <ResultComponent state={this.state.result}/>
+        <BasicKeyPadComponent onClick={this.onClick}/>
       </div>
     );
   }

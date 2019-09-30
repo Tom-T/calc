@@ -18,11 +18,14 @@
 .buttonpad {
   padding: 0px;
   margin: 0px;
+  min-width: 10eh;
+  max-width: 100%;
 }
 .button {
   background-color: #d4d4d4;
   font-family: fantasy;
   font-size: calc(8vh);
-  padding: 0px;
+  padding: 2vh;
   margin: 1px;
+  min-width: 4vh;
 }
