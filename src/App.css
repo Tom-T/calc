@@ -2,30 +2,44 @@
   font-family:'digital-calculator-font';
   src: url('Segment14.otf');
  }
-.calculator-body{
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
+}
+ .calculator-body{
   padding: 0px;
   margin: 0px;
 }
 .result {
   background-color: #757575;
   font-family:'digital-calculator-font';
-  font-size: calc(10vh);
-  min-height: 10%;
+  font-size: 13vmin;
+  min-height: calc(18vmin + 2px);
+  max-height: calc(18vmin + 2px);
   padding: 1px;
   margin: 0px;
   font-stretch: expanded;
+  vertical-align: center;
 }
 .buttonpad {
   padding: 0px;
   margin: 0px;
   min-width: 10eh;
   max-width: 100%;
+  background-color: #a2a2a2;
+  height: calc(82vmin - 3px);
 }
 .button {
   background-color: #d4d4d4;
   font-family: fantasy;
-  font-size: calc(8vh);
-  padding: 2vh;
-  margin: 1px;
-  min-width: 4vh;
+  font-size: 8vmin;
+  margin: 0px;
+  padding: 0px;
+  min-width: 25vw;
+  height: 20%;
 }

@@ -5,8 +5,10 @@ const path = require("path");
 const isDev = require("electron-is-dev");
 let mainWindow;
 function createWindow() {
-mainWindow = new BrowserWindow({width: 100, height: 145})
+mainWindow = new BrowserWindow({width: 220, height: 220, minWidth:220, minHeight:220, maxWidth: 880, maxHeight: 880})
+mainWindow.setTitle("Simple Calc")
 mainWindow.setMenuBarVisibility(false)
+// mainWindow.setAspectRatio(16/9)
 mainWindow.loadURL(
 isDev
 ? "http://localhost:3000"

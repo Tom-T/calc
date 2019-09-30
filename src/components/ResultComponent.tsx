@@ -7,9 +7,7 @@ interface Props {
 export default class ResultComponent extends Component<Props> {
   render() {
     return (
-      <div className="result">
-        <p>{this.props.state}</p>
-      </div>
+      <p className="result">{this.props.state} </p>
     );
   }
 }
