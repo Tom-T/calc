@@ -13,8 +13,12 @@ export default class App extends Component<Props> {
       result: "Simple Calc"
     }
   }
-
-  onClick = (button: string) => {
+  handleKeywordKeyPress = (event: React.KeyboardEvent) =>{
+    if( event.key === '=' ){
+      this.calculate()
+    }
+  };
+    onClick = (button: string) => {
     console.log("Data: " +button )
 
     if(button === "="){
